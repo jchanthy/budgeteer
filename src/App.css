@@ -1,10 +1,92 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #3d04fb;
+  color: white;
+  width: 800px;
+  text-align: center;
+}
 
+.header .logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: red;
+}
+.header h3 {
+  margin: auto;
+  text-align: center;
+}
+
+.header button {
+  width: 200px;
+  margin-left: auto;
+}
+
+.currenBalance {
+  background-color: rgb(223, 232, 255);
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.income_wrapper {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; 
+  justify-items: center;
+  width: 800px;
+}
+ .income_wrapper div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+ }
+
+.income_wrapper h2 {
+  text-align: left;
+  margin-bottom: 0;
+}
+.income_wrapper .income_result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 200px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #3d04fb;
+  color: white;
+  height: auto;
+  width: 50%;
+}
+button:hover {
+  background-color: #511dfb;
+  color: white;
+  cursor: pointer;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -16,6 +98,30 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #3d04fb;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
 }
 
 @keyframes logo-spin {
@@ -39,4 +145,10 @@
 
 .read-the-docs {
   color: #888;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
