@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  align-content: center;
   background-color: #3d04fb;
   color: white;
   width: 800px;
@@ -147,8 +148,5 @@ tr:hover {
   color: #888;
 }
 @media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
 }

@@ -6,8 +6,8 @@ function App() {
   return (
     <>
    <div className='header'>
-    <div className="logo"></div>
-    <h3>Hello World</h3>
+    
+    <h3>Budgeteer</h3>
     <button>Toggle Dark Mode</button>
    </div>
    <div className="currenBalance">
