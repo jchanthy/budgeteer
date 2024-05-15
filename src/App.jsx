@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 
-function App() {
-
+function App() {  
+  
   return (
     <>
    <div className='header'>
@@ -63,7 +63,6 @@ function App() {
     &copy; Copyright 2024 Budgeteer 
    </div>
    </>
-  )
-}
+)};
 
-export default App
+export default App;
