@@ -11,8 +11,8 @@
   justify-content: space-between;
   padding: 1rem;
   align-content: center;
-  background-color: #3d04fb;
-  color: white;
+  background-color:var(--background-color);
+  color: var(--color);
   width: 800px;
   text-align: center;
 }
