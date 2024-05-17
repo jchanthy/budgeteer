@@ -3,26 +3,20 @@ import Exspense from './components/Expense';
 import Footer from './components/Footer';
 import Income from './components/Income';
 import Transaction from './components/Transactions';
+import CurrentBalance from './components/CurrentBalance';
+import Header from './components/Header';
 
 function App() {  
   
   return (
     <>
-   <div className='header'>
-    
-    <h3>Budgeteer</h3>
-    <button>Toggle Dark Mode</button>
-   </div>
-   <div className="currenBalance">
-    <p>Current Balance</p>
-    <h1>$921.48</h1>
-   </div>
-
+<Header />
+<CurrentBalance /> 
 <Income />
 <Exspense />
 <Transaction />
-   
-   </>
-)};
 <Footer />
+</>
+)};
+
 export default App;
